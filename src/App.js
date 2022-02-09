@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import MyServices from "./components/MyServices";
+import AboutMe from "./components/AboutMe";
+import MyWork from "./components/MyWork";
 
 export default function App() {
     return (
@@ -8,6 +10,8 @@ export default function App() {
             <Header />
             <Introduction />
             <MyServices />
+            <AboutMe />
+            <MyWork />
         </div>
     )
 }
