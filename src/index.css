@@ -2,27 +2,29 @@
     box-sizing: border-box;
 }
 :root {
-    --ff-primary: ;
-    --ff-secondary: ;
-
-    --fw-norm: ;
-    --fw-bold: ;
-
-    --clr-light: ;
-    --clr-dark: ;
-    --clr-accent: ;
-
-    --fs-h1: ;
-    --fs-h2: ;
-    --fs-h3: ;
-    --fs-norm: ;
+    /* font family */
+    --ff-primary: Inter;
+    --ff-secondary: Karla;
+    /* font weight */
+    --fw-norm: 300;
+    --fw-bold: 900;
+    /* colors */
+    --clr-light: white;
+    --clr-dark: black;
+    --clr-accent: yellow;
+    /* font size */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-norm: 1rem;
 }
+/*font size for bigger screens */
 @media (min-with: 800px) {
     :root{
-        --fs-h1: ;
-        --fs-h2: ;
-        --fs-h3: ;
-        --fs-norm: ;
+        --fs-h1: 4.5rem;
+        --fs-h2: 3rem;
+        --fs-h3: 2rem;
+        --fs-norm: 1.25rem;
     }
 }
 body {

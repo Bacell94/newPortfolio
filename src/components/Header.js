@@ -1,9 +1,9 @@
-
+import logo from "../images/devjane.png"
 export default function Header() {
     return (
         <header>
             <div className="logo">
-                <img src="" alt="" />
+                <img src={logo} alt="" />
             </div>
             <button className="nav-toggle" aria-label="nav toggle">
                 <span className="hamburger"></span>
