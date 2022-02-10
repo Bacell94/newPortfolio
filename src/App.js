@@ -3,6 +3,7 @@ import Introduction from "./components/Introduction";
 import MyServices from "./components/MyServices";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
+import Footer from "./components/Footer";
 
 export default function App() {
     return (
@@ -12,6 +13,7 @@ export default function App() {
             <MyServices />
             <AboutMe />
             <MyWork />
+            <Footer />
         </div>
     )
 }
