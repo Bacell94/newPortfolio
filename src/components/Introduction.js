@@ -4,7 +4,7 @@ export default function Introduction() {
         <section className="intro" id="home">
             <h1 className="section__title section__title--intro">Hi, I'm <strong>Jane Smith</strong></h1>
             <p className="section__subtitle section__subtitle--intro">Front-end Dev</p>
-            <img src={devJane1} alt="" />
+            <img className="intro__img" src={devJane1} alt="" />
         </section>
     )
 }
