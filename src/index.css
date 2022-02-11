@@ -1,6 +1,9 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+/* custom styles */
+
 :root {
     /* font family */
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -17,6 +20,9 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.5rem;
     --fs-norm: 1rem;
+    /* shadow */
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 /*font size for bigger screens */
 @media (min-with: 800px) {
@@ -27,6 +33,9 @@
         --fs-norm: 1.25rem;
     }
 }
+
+/* general styles */
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -68,6 +77,8 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
+/* typography */
+
 h1, h2, h3 {
     line-height: 1;
     margin: 0;
@@ -98,6 +109,7 @@ h3 { font-size: var(--fs-h1) }
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
+
 /* header */
 
 nav { display: none; }
@@ -193,7 +205,9 @@ nav { display: none; }
         margin-left: 2em;
     }
 }
+
 /* about me */
+
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -233,4 +247,39 @@ nav { display: none; }
         position: relative;
         z-index: 2;
     }
+}
+
+/* My Work */
+
+.my-work {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;    
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item {
+    background: var(--clr-accent);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+    transform: scale(1.2);
+    opacity: .5;
 }
