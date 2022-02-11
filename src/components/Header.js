@@ -12,7 +12,7 @@ export default function Header() {
                 <ul className="nav__list">
                     <li className="nav__item"><a className="nav__link" href="#home">Home</a></li>
                     <li className="nav__item"><a className="nav__link" href="#services">My services</a></li>
-                    <li className="nav__item"><a className="nav__link" href="#about"></a>About me</li>
+                    <li className="nav__item"><a className="nav__link" href="#about">About me</a></li>
                     <li className="nav__item"><a className="nav__link" href="#work">My work</a></li>
                 </ul>
             </nav>
