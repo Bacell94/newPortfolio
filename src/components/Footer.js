@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCodepen, faDribbble, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCodepen, faDribbble, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
     return (
-        <footer>
-            <a href="mailto:" class="footer__link">e-mail</a>
+        <footer className='footer'>
+            <a href="mailto:" class="footer__link">example@e-mail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://codepen.io">
