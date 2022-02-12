@@ -6,7 +6,7 @@ export default function Header(props) {
                 <img src={logo} alt="" />
             </div>
             <button className="nav-toggle" aria-label="nav toggle" onClick={props.click}>
-                <span className={`hamburger ${props.nav && "hamburger-on"}`} ></span>
+                <span className={`hamburger ${!props.nav && props.dark && "bg-light"} ${props.nav && "hamburger-on"}`} ></span>
             </button>
             <nav className={`nav ${props.nav && "nav-on"}`}>
                 <ul className="nav__list">

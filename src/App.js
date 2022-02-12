@@ -8,16 +8,17 @@ import Footer from "./components/Footer";
 
 export default function App() {
     const [navOn, setNavOn] = react.useState(false)
+    const [darkMode, setDarkMode] = react.useState(true)
 
     function handleClick() {
         setNavOn(prev => !prev)
     }
     return (
-        <div>
-            <Header click={handleClick} nav={navOn}/>
-            <Introduction />
+        <div className={darkMode && "bg-dark clr-light" }>
+            <Header click={handleClick} nav={navOn} dark={darkMode}/>
+            <Introduction dark={darkMode}/>
             <MyServices />
-            <AboutMe />
+            <AboutMe dark={darkMode}/>
             <MyWork />
             <Footer />
         </div>

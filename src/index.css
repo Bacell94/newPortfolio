@@ -36,6 +36,10 @@
 
 /* general styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -110,6 +114,7 @@ h3 { font-size: var(--fs-h1) }
     margin-bottom: 1em;
 }
 
+
 .section__subtitle--work {
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
@@ -131,6 +136,7 @@ header {
 .nav {
     position: fixed;
     background: var(--clr-dark);
+    opacity: 90%;
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -432,4 +438,19 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+/* dark mode */
+.clr-light {
+    color: var(--clr-light);
+}
+.clr-dark {
+    color: var(--clr-dark)
+}
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+.bg-light,
+.bg-light::before,
+.bg-light::after {
+    background-color: var(--clr-light);
 }
