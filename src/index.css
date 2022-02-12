@@ -156,9 +156,15 @@ header {
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 1em;
-    top: 1em;
     z-index: 1000;
+}
+.nav-toggle__hamburger {
+    top: 1em;
+    right: 1em;
+}
+.nav-toggle__darkmode {
+    top: 0.6em;
+    right: 6em;
 }
 
 .hamburger {
@@ -305,7 +311,7 @@ header {
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .services {
         display: flex;
         max-width: 1000px;
@@ -439,12 +445,17 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
 /* dark mode */
+
 .clr-light {
     color: var(--clr-light);
 }
 .clr-dark {
     color: var(--clr-dark)
+}
+.clr-accent {
+    color: var(--clr-accent)
 }
 .bg-dark {
     background-color: var(--clr-dark);
