@@ -5,7 +5,8 @@ import MyServices from "./components/MyServices";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
 import Footer from "./components/Footer";
-import { BrowserRouter } from "react-router-dom"
+import ProjectOne from "./pages/ProjectOne"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
     const [navOn, setNavOn] = react.useState(false)
@@ -25,10 +26,17 @@ export default function App() {
                 clickDark={toggleDark} 
                 nav={navOn} 
                 dark={darkMode}/>
-                <Introduction dark={darkMode}/>
-                <MyServices />
-                <AboutMe dark={darkMode}/>
-                <MyWork />
+                <Routes>
+                   <Route path="/" element={
+                    <div>
+                        <Introduction dark={darkMode}/>
+                        <MyServices />
+                        <AboutMe dark={darkMode}/>
+                        <MyWork />
+                    </div>
+                   } />
+                   <Route path="/projectone" element={<ProjectOne />} />
+                </Routes>
                 <Footer />
             </div>
         </BrowserRouter>    

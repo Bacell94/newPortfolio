@@ -1,7 +1,8 @@
-import project1 from "../images/portfolio-01.jpg"
-import project2 from "../images/portfolio-02.jpg"
-import project3 from "../images/portfolio-03.jpg"
-import project4 from "../images/portfolio-04.jpg"
+import project1 from "../images/portfolio-01.jpg";
+import project2 from "../images/portfolio-02.jpg";
+import project3 from "../images/portfolio-03.jpg";
+import project4 from "../images/portfolio-04.jpg";
+import { Link } from "react-router-dom";
 
 export default function MyWork() {
     return (
@@ -10,21 +11,21 @@ export default function MyWork() {
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
             
             <div class="portfolio">
-                <a href="#" class="portfolio__item">
+                <Link to="/projectone" class="portfolio__item">
                     <img src={project1} alt="" class="portfolio__img"/>
-                </a>
+                </Link>
                 
-                <a href="#" class="portfolio__item">
+                <Link to="/projectone" class="portfolio__item">
                     <img src={project2} alt="" class="portfolio__img"/>
-                </a>
+                </Link>
                 
-                <a href="#" class="portfolio__item">
+                <Link to="/projectone" class="portfolio__item">
                     <img src={project3} alt="" class="portfolio__img"/>
-                </a>
+                </Link>
                 
-                <a href="#" class="portfolio__item">
+                <Link to="/projectone" class="portfolio__item">
                     <img src={project4} alt="" class="portfolio__img"/>
-                </a>
+                </Link>
             </div>
         </section>
     )

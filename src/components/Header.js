@@ -1,6 +1,8 @@
 import logo from "../images/devjane.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
+
 export default function Header(props) {
     return (
         <header>
@@ -18,7 +20,7 @@ export default function Header(props) {
             <nav className={`nav ${props.nav && "nav-on"}`}>
                 <ul className="nav__list">
                     <li className="nav__item">
-                        <a className="nav__link" href="#home" onClick={props.clickNav}>Home</a></li>
+                        <Link className="nav__link" to="/" onClick={props.clickNav}>Home</Link></li>
                     <li className="nav__item">
                         <a className="nav__link" href="#services" onClick={props.clickNav}>My services</a></li>
                     <li className="nav__item">
