@@ -1,7 +1,7 @@
 import logo from "../images/devjane.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default function Header(props) {
     return (
@@ -22,11 +22,11 @@ export default function Header(props) {
                     <li className="nav__item">
                         <Link className="nav__link" to="/" onClick={props.clickNav}>Home</Link></li>
                     <li className="nav__item">
-                        <a className="nav__link" href="#services" onClick={props.clickNav}>My services</a></li>
+                        <Link className="nav__link" to="/#services" onClick={props.clickNav}>My services</Link></li>
                     <li className="nav__item">
-                        <a className="nav__link" href="#about" onClick={props.clickNav}>About me</a></li>
+                        <Link className="nav__link" to="/#about" onClick={props.clickNav}>About me</Link></li>
                     <li className="nav__item">
-                        <a className="nav__link" href="#work" onClick={props.clickNav}>My work</a></li>
+                        <Link className="nav__link" to="/#work" onClick={props.clickNav}>My work</Link></li>
                 </ul>
             </nav>
         </header>
