@@ -1,4 +1,3 @@
-import logo from "../images/devjane.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { HashLink as Link } from "react-router-hash-link";
@@ -6,9 +5,7 @@ import { HashLink as Link } from "react-router-hash-link";
 export default function Header(props) {
     return (
         <header>
-            <div className="logo">
-                <img src={logo} alt="" />
-            </div>
+            <span className="logo">BACELL</span>
             <button className="nav-toggle nav-toggle__darkmode" aria-label="darkmode toggle" onClick={props.clickDark}>
               {!props.dark?
                 <FontAwesomeIcon icon={faMoon} /> :
@@ -22,11 +19,9 @@ export default function Header(props) {
                     <li className="nav__item">
                         <Link className="nav__link" to="/" onClick={props.clickNav}>Home</Link></li>
                     <li className="nav__item">
-                        <Link className="nav__link" to="/#services" onClick={props.clickNav}>My services</Link></li>
+                        <Link className="nav__link" to="/#work" onClick={props.clickNav}>My work</Link></li>
                     <li className="nav__item">
                         <Link className="nav__link" to="/#about" onClick={props.clickNav}>About me</Link></li>
-                    <li className="nav__item">
-                        <Link className="nav__link" to="/#work" onClick={props.clickNav}>My work</Link></li>
                 </ul>
             </nav>
         </header>

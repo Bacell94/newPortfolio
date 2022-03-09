@@ -4,7 +4,7 @@ import { faCodepen, faDribbble, faTwitter, faGithub } from '@fortawesome/free-br
 export default function Footer() {
     return (
         <footer className='footer'>
-            <a href="mailto:" class="footer__link">example@e-mail.com</a>
+            <a href="mailto:bacell94@gmail.com" class="footer__link">How can i help?</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://codepen.io">

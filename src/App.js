@@ -1,7 +1,6 @@
 import react from "react";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
-import MyServices from "./components/MyServices";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
 import Footer from "./components/Footer";
@@ -30,9 +29,8 @@ export default function App() {
                    <Route path="/" element={
                     <div>
                         <Introduction dark={darkMode}/>
-                        <MyServices />
-                        <AboutMe dark={darkMode}/>
                         <MyWork />
+                        <AboutMe dark={darkMode}/>
                     </div>
                    } />
                    <Route path="/projectone" element={<ProjectOne />} />
