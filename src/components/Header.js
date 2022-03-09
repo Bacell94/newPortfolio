@@ -22,6 +22,8 @@ export default function Header(props) {
                         <Link className="nav__link" to="/#work" onClick={props.clickNav}>My work</Link></li>
                     <li className="nav__item">
                         <Link className="nav__link" to="/#about" onClick={props.clickNav}>About me</Link></li>
+                    <li className="nav__item">
+                        <Link className="nav__link" to="/#contact" onClick={props.clickNav}>Contact</Link></li>
                 </ul>
             </nav>
         </header>
