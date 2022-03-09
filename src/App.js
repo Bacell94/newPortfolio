@@ -3,9 +3,11 @@ import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
+import contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectOne from "./pages/ProjectOne"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contact from "./components/Contact";
 
 export default function App() {
     const [navOn, setNavOn] = react.useState(false)
@@ -31,6 +33,7 @@ export default function App() {
                         <Introduction dark={darkMode}/>
                         <MyWork />
                         <AboutMe dark={darkMode}/>
+                        <Contact />
                     </div>
                    } />
                    <Route path="/projectone" element={<ProjectOne />} />
