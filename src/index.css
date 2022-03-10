@@ -14,6 +14,7 @@
     /* colors */
     --clr-light: rgb(244, 255, 253);
     --clr-dark: rgb(32, 32, 48);
+    --clr-dark2: hsl(221, 33%, 19%);
     --clr-accent: rgb(215, 226, 44);
     /* font size */
     --fs-h1: 3rem;
@@ -74,6 +75,7 @@ strong { font-weight: var(--fw-bold) }
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
+    font-family: inherit;
     transition: transform 200ms ease-in-out;
     margin: 0 auto;
 }
@@ -404,7 +406,7 @@ header {
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
-    border-bottom: 1px solid  rgb(57, 48, 74);
+    border-bottom: 1px solid  var(--clr-dark2);
 }
 
 .about-me__img {
@@ -451,7 +453,7 @@ header {
 }
 form{
     padding: 2em;
-    background: rgb(57, 48, 74);
+    background: var(--clr-dark2);
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -465,6 +467,9 @@ input,textarea{
 textarea{
     width: 98%;
     margin-bottom: 4%;
+}
+.hidden{
+    display: none;
 }
 @media screen and (max-width: 600px){
     input, textarea{
@@ -529,6 +534,9 @@ textarea{
 }
 .bg-dark {
     background-color: var(--clr-dark);
+}
+.bg-dark2 {
+    background: var(--clr-dark2);
 }
 .bg-light,
 .bg-light::before,

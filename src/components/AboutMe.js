@@ -3,7 +3,6 @@ export default function AboutMe(props) {
     return (
         <section className="about-me" id="about">
             <h2 className="section__title section__title__about">Who i am</h2>
-            {/* <p className={`section__subtitle section__subtitle--about ${props.dark && "clr-dark"}`}></p> */}
             <p>
                 A tech geek who fell into a code well, loved it, and eventually decided to make it home,
                 i enjoy having the skills to create tools for people that would help them advance their projects and businesses and share their ideas,

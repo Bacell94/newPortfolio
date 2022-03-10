@@ -31,7 +31,7 @@ export default function App() {
                    <Route path="/" element={
                     <div>
                         <Introduction dark={darkMode}/>
-                        <MyWork />
+                        <MyWork dark={darkMode}/>
                         <AboutMe dark={darkMode}/>
                         <Contact />
                     </div>
