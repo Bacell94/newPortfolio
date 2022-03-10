@@ -468,6 +468,12 @@ textarea{
     width: 98%;
     margin-bottom: 4%;
 }
+form span{
+    color: var(--clr-accent);
+    margin: 0 auto;
+    margin-top: 1em;
+    
+}
 .hidden{
     display: none;
 }
