@@ -3,10 +3,7 @@ import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import AboutMe from "./components/AboutMe";
 import MyWork from "./components/MyWork";
-import contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ProjectOne from "./pages/ProjectOne"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Contact from "./components/Contact";
 
 export default function App() {
@@ -19,27 +16,19 @@ export default function App() {
     function toggleDark() {
         setDarkMode(prev => !prev)
     }
+
     return (
-        <BrowserRouter>
-            <div className={darkMode && "bg-dark clr-light" }>
+            <div className={darkMode? "bg-dark clr-light" : undefined}>
                 <Header 
                 clickNav={toggleNav}
                 clickDark={toggleDark} 
                 nav={navOn} 
                 dark={darkMode}/>
-                <Routes>
-                   <Route path="/" element={
-                    <div>
-                        <Introduction dark={darkMode}/>
-                        <MyWork dark={darkMode}/>
-                        <AboutMe dark={darkMode}/>
-                        <Contact />
-                    </div>
-                   } />
-                   <Route path="/projectone" element={<ProjectOne />} />
-                </Routes>
+                <Introduction dark={darkMode}/>
+                <MyWork dark={darkMode}/>
+                <AboutMe dark={darkMode}/>
+                <Contact />
                 <Footer />
-            </div>
-        </BrowserRouter>    
+            </div>  
     )
 }

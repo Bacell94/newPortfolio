@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
-import { HashLink as Link } from "react-router-hash-link";
 
 export default function Header(props) {
     return (
         <header>
-            <span className="logo">BACELL</span>
+            <span className="logo">B^_CELL</span>
             <button className="nav-toggle nav-toggle__darkmode" aria-label="darkmode toggle" onClick={props.clickDark}>
               {!props.dark?
                 <FontAwesomeIcon icon={faMoon} /> :
@@ -17,13 +16,13 @@ export default function Header(props) {
             <nav className={`nav ${props.nav && "nav-on"}`}>
                 <ul className="nav__list">
                     <li className="nav__item">
-                        <Link className="nav__link" to="/" onClick={props.clickNav}>Home</Link></li>
+                        <a className="nav__link" href="#home" onClick={props.clickNav}>Home</a></li>
                     <li className="nav__item">
-                        <Link className="nav__link" to="/#work" onClick={props.clickNav}>My work</Link></li>
+                        <a className="nav__link" href="#work" onClick={props.clickNav}>My work</a></li>
                     <li className="nav__item">
-                        <Link className="nav__link" to="/#about" onClick={props.clickNav}>About me</Link></li>
+                        <a className="nav__link" href="#about" onClick={props.clickNav}>About me</a></li>
                     <li className="nav__item">
-                        <Link className="nav__link" to="/#contact" onClick={props.clickNav}>Contact</Link></li>
+                        <a className="nav__link" href="#contact" onClick={props.clickNav}>Contact</a></li>
                 </ul>
             </nav>
         </header>

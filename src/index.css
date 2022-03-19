@@ -375,16 +375,19 @@ header {
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .portfolio__item {
+    max-width: 333px;
     background: var(--clr-accent);
     overflow: hidden;
 }
 
 .portfolio__img {
+    width: 100%;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -469,6 +472,8 @@ textarea{
     margin-bottom: 4%;
 }
 form span{
+    width: 100%;
+    text-align: center;
     color: var(--clr-accent);
     margin: 0 auto;
     margin-top: 1em;

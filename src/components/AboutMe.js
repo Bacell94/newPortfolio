@@ -1,5 +1,5 @@
 import me from "../images/me.jpg"
-export default function AboutMe(props) {
+export default function AboutMe() {
     return (
         <section className="about-me" id="about">
             <h2 className="section__title section__title__about">Who i am</h2>
